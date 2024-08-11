@@ -106,15 +106,15 @@ class Building(BaseImageDataset):
             # if relabel:
             #     pid = pid2label[pid]
             if category == type:
-                dataset.append((img_path, pid, camid))
+                dataset.append((img_path, pid, camid, 1))
             elif type == 'all':
-                dataset.append((img_path, pid, camid))
+                dataset.append((img_path, pid, camid, 1))
 
         return dataset
     
     def get_imagedata_info(self, data):
         pids, cams = [], []
-        for _, pid, camid in data:
+        for _, pid, camid, _ in data:
             pids.append(pid)
             cams.append(camid)
         pids = set(pids)
