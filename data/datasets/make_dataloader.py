@@ -7,6 +7,7 @@ from .bases import ImageDataset
 from .sampler import RandomIdentitySampler, IdentitySampler
 from .dukemtmcreid import DukeMTMCreID
 from .market1501 import Market1501
+from .building import Building
 from .msmt17 import MSMT17
 from .msvr310 import MSVR310
 from .RGBNT201 import RGBNT201
@@ -26,6 +27,7 @@ __factory = {
     'MSVR310': MSVR310,
     'RGBNT300':RGBNT300,
     'Market1501-MM': market_to_RGBNT201,
+    'Building': Building,
 }
 """ Random Erasing (Cutout)
 
