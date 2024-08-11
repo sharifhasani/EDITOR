@@ -233,8 +233,8 @@ def val_collate_fn(batch):
             TI_list.append(img[1])
         else:
             RGB_list.append(img[0])
-            NI_list.append(img[1])
-            TI_list.append(img[2])
+            NI_list.append(img[0])
+            TI_list.append(img[0])
 
     RGB = torch.stack(RGB_list, dim=0)
     NI = torch.stack(NI_list, dim=0)
