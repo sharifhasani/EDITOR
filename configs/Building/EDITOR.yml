@@ -1,5 +1,5 @@
 MODEL:
-  PRETRAIN_CHOICE: 'imagenet'
+  PRETRAIN_CHOICE: 'none'
   MIX_DIM: 768
   PRETRAIN_PATH_T: './vitb_16_224_21k.pth'
   TRANSFORMER_TYPE: 'vit_base_patch16_224'
