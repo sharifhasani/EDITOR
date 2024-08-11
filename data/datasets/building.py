@@ -122,4 +122,4 @@ class Building(BaseImageDataset):
         num_pids = len(pids)
         num_cams = len(cams)
         num_imgs = len(data)
-        return num_pids, num_imgs, num_cams
+        return num_pids, num_imgs, num_cams, 1
